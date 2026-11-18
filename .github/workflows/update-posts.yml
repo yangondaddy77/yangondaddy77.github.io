@@ -1,0 +1,46 @@
+name: 글 목록 갱신
+
+on:
+  schedule:
+    # 07:30 KST = 22:30 UTC, 19:30 KST = 10:30 UTC. 한국은 서머타임이 없다.
+    - cron: "30 22 * * *"
+    - cron: "30 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-posts
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 테스트
+        run: node --test test/feed.test.mjs
+
+      - name: 피드 병합 및 페이지 생성
+        run: node scripts/update.mjs
+
+      - name: 변경 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- .nojekyll data/posts.json index.html 404.html sitemap.xml robots.txt assets sports music
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+            exit 0
+          fi
+          git commit -m "글 목록 갱신"
+          git push

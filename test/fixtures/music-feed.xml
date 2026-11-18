@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title><![CDATA[내맘대로 음악]]></title>
+    <description><![CDATA[yangon_daddy@naver.com 은 채널 설명일 뿐 글이 아닙니다.]]></description>
+    <item>
+      <category><![CDATA[내한공연·라이브]]></category>
+      <title><![CDATA[테스트 공연 제목]]></title>
+      <link><![CDATA[https://blog.naver.com/jpopsakurazaka/223000000001?fromRss=true&trackingCode=rss]]></link>
+      <guid>https://blog.naver.com/jpopsakurazaka/223000000001</guid>
+      <description><![CDATA[음악 본문 발췌와 이미지 주소 https://blogthumb.pstatic.net/music.png]]></description>
+      <pubDate>Thu, 19 Nov 2026 07:54:13 +0900</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[신곡정보]]></category>
+      <title><![CDATA[테스트 신곡 제목]]></title>
+      <link><![CDATA[https://blog.naver.com/jpopsakurazaka/223000000002]]></link>
+      <guid>https://blog.naver.com/jpopsakurazaka/223000000002</guid>
+      <pubDate>Mon, 16 Nov 2026 07:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
