@@ -37,6 +37,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Search Console 확인 파일(루트의 google*.html)은 생성 대상이 아니다. 이 경로에 넣지 않는다.
           git add -A -- .nojekyll data/posts.json index.html 404.html sitemap.xml robots.txt assets sports music
           if git diff --cached --quiet; then
             echo "변경 없음"

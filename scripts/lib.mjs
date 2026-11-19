@@ -545,8 +545,19 @@ async function removeStaleCategories(root, files) {
   }
 }
 
+function isGeneratedOutput(rel) {
+  if (/^google[0-9a-f]+\.html$/i.test(path.basename(rel))) return false;
+  if (rel === "assets/site.css" || rel === ".nojekyll" || rel === "robots.txt" || rel === "404.html" || rel === "index.html" || rel === "sitemap.xml") {
+    return true;
+  }
+  return /^(sports|music)\/index\.html$/.test(rel) || /^(sports|music)\/category\/[^/]+\/index\.html$/.test(rel);
+}
+
 export async function writeSite(root, data, files) {
   for (const rel of Object.keys(files)) {
+    if (!isGeneratedOutput(rel)) {
+      throw new Error(`생성기가 소유하지 않은 파일은 쓰지 않습니다: ${rel}`);
+    }
     const dest = safeJoin(root, rel);
     await mkdir(path.dirname(dest), { recursive: true });
     await atomicWrite(dest, files[rel]);
