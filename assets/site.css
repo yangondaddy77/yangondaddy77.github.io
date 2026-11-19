@@ -1,0 +1,205 @@
+:root {
+  color-scheme: light;
+  --ink: #221c16;
+  --muted: #6d645b;
+  --line: #d9d1c6;
+  --paper: #f6f3ec;
+  --card: #fffdf9;
+  --focus: #221c16;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+a { color: inherit; }
+
+a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.25rem 1.25rem 4rem;
+}
+
+header {
+  border-top: 4px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 1.1rem 0 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.kicker {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  margin: 0.2rem 0 0.55rem;
+  font-size: 1.85rem;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  font-weight: 750;
+}
+
+.lede {
+  margin: 0 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.lede a,
+.origin a {
+  text-underline-offset: 0.16em;
+}
+
+nav.site {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.95rem;
+}
+
+nav.site a {
+  display: inline-block;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+nav.site a[aria-current="page"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fffdf9;
+}
+
+.counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.9rem;
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1.15rem;
+}
+
+.categories a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  text-decoration: none;
+  font-size: 0.86rem;
+}
+
+.categories a[aria-current="page"] {
+  border-color: var(--ink);
+}
+
+.categories span {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.origin {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+}
+
+.posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.post:last-child { border-bottom: 1px solid var(--line); }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.7rem;
+  margin: 0 0 0.18rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.meta time { font-variant-numeric: tabular-nums; }
+
+.meta a { text-decoration: none; }
+
+.blog,
+.cat {
+  padding: 0.02rem 0.4rem;
+  border-radius: 999px;
+}
+
+.blog-sports { background: #d5eadc; color: #124b30; }
+.blog-music { background: #f6d9d2; color: #7c2f28; }
+.cat { background: #e8e1d6; color: #3d342c; }
+
+.post h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+}
+
+.post h2 a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.empty {
+  margin: 1rem 0;
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 1.6rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+footer p { margin: 0.25rem 0; }
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .wrap { padding: 1.25rem 1rem 3rem; }
+  h1 { font-size: 1.55rem; }
+}

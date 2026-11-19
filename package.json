@@ -1,0 +1,13 @@
+{
+  "name": "yangondaddy77-hub",
+  "private": true,
+  "description": "네이버에 공개된 글 제목과 링크를 모으는 정적 허브",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/feed.test.mjs",
+    "update": "node scripts/update.mjs"
+  }
+}

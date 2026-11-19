@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title><![CDATA[내맘대로 스포츠]]></title>
+    <description><![CDATA[협업문의 : yangon_daddy@naver.com]]></description>
+    <item>
+      <category><![CDATA[내맘대로 축구]]></category>
+      <title><![CDATA[테스트 축구 제목]]></title>
+      <link><![CDATA[https://blog.naver.com/yangon_daddy/224000000001?fromRss=true&trackingCode=rss]]></link>
+      <guid>https://blog.naver.com/yangon_daddy/224000000001</guid>
+      <description><![CDATA[이 문장은 본문 발췌라서 허브에 담지 않습니다. <img src="https://blogthumb.pstatic.net/secret-thumb.png" />]]></description>
+      <pubDate>Thu, 19 Nov 2026 07:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[내맘대로 야구]]></category>
+      <title><![CDATA[따옴표 "있는" 제목 &amp; 엔티티]]></title>
+      <link><![CDATA[https://blog.naver.com/yangon_daddy/224000000002]]></link>
+      <pubDate>Wed, 18 Nov 2026 15:30:00 +0900</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[다른 블로그 글]]></title>
+      <link><![CDATA[https://blog.naver.com/someone_else/224000000099]]></link>
+      <pubDate>Wed, 18 Nov 2026 15:30:00 +0900</pubDate>
+    </item>
+    <item>
+      <title></title>
+      <link><![CDATA[https://blog.naver.com/yangon_daddy/224000000003]]></link>
+      <pubDate>Wed, 18 Nov 2026 15:30:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
