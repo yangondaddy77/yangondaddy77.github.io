@@ -44,7 +44,7 @@ npm run update
 ## 구글 서치 콘솔
 
 1. [Google Search Console](https://search.google.com/search-console)에서 속성 `https://yangondaddy77.github.io/`를 추가합니다.
-2. 소유권 확인이 HTML 파일이면, 받은 파일(예: `google123.html`)을 이 저장소 **루트**에 넣고 `main`에 올립니다. 확인 주소는 `https://yangondaddy77.github.io/google123.html`이 됩니다.
+2. 소유권 확인이 HTML 파일이면, 받은 파일(예: `google123.html`)을 이 저장소 **루트**에 넣고 `main`에 올립니다. 확인 주소는 `https://yangondaddy77.github.io/google123.html`이 됩니다. 글 목록 갱신은 이 파일을 고치거나 지우지 않고, `sitemap.xml`에도 넣지 않습니다.
 3. 확인이 끝나면 Sitemaps에 `sitemap.xml`을 제출합니다. 전체 주소는 `https://yangondaddy77.github.io/sitemap.xml`입니다.
 
 ## 데이터

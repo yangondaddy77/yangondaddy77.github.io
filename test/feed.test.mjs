@@ -138,6 +138,8 @@ test("pages link to Naver posts and the sitemap lists hub pages only", async () 
     /music\/category\/%EB%82%B4%ED%95%9C%EA%B3%B5%EC%97%B0-%EB%9D%BC%EC%9D%B4%EB%B8%8C\//,
   );
   assert.equal(files["sitemap.xml"].includes("blog.naver.com"), false);
+  assert.equal(Object.keys(files).some((name) => name.includes("google")), false);
+  assert.equal(files["sitemap.xml"].includes("google"), false);
 });
 
 async function tempRoot() {
@@ -233,4 +235,22 @@ test("a successful merge writes both blogs and keeps older posts", async () => {
   assert.equal(rebuilt.changed, true);
   assert.match(await readFile(path.join(root, "index.html"), "utf8"), /예전 글 제목/);
   assert.equal(await readFile(file, "utf8"), snapshot);
+});
+
+test("a Search Console file survives a rebuild and stays out of the sitemap", async () => {
+  const root = await tempRoot();
+  const verifyName = "googleb6dc742675944a5e.html";
+  const verifyBody = "google-site-verification: googleb6dc742675944a5e.html\n";
+  await writeFile(path.join(root, verifyName), verifyBody);
+  const sportsXml = await fixture("sports-feed.xml");
+  const musicXml = await fixture("music-feed.xml");
+  await updateHub({
+    root,
+    fetchText: async (url) => (url.includes("jpopsakurazaka") ? musicXml : sportsXml),
+    now: () => new Date("2026-11-19T00:00:00Z"),
+  });
+  assert.equal(await readFile(path.join(root, verifyName), "utf8"), verifyBody);
+  const sitemap = await readFile(path.join(root, "sitemap.xml"), "utf8");
+  assert.equal(sitemap.includes(verifyName), false);
+  assert.equal(sitemap.includes("google-site-verification"), false);
 });
