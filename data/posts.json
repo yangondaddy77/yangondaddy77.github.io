@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-11-23T20:26:02+09:00",
+  "updatedAt": "2026-11-24T08:19:04+09:00",
   "posts": [
+    {
+      "blog": "sports",
+      "logNo": "224489412554",
+      "title": "김혜성 다저스 '실망스러운 실패작' 혹평, 12월부터 코치 없이 혼자 고치는 스윙",
+      "url": "https://blog.naver.com/yangon_daddy/224489412554",
+      "publishedAt": "2026-11-24T07:56:33+09:00",
+      "category": "내맘대로 야구"
+    },
+    {
+      "blog": "music",
+      "logNo": "224488923581",
+      "title": "우타다 히카루 입문, Automatic부터 JR 도카이 CM송 「Intentions」까지 대표곡 다섯",
+      "url": "https://blog.naver.com/jpopsakurazaka/224488923581",
+      "publishedAt": "2026-11-24T07:00:00+09:00",
+      "category": "아티스트 소개"
+    },
+    {
+      "blog": "sports",
+      "logNo": "224488966590",
+      "title": "구자욱·원태인 FA, 샐러리캡 151억 앞에서 삼성이 꺼낼 카드는 초장기 계약",
+      "url": "https://blog.naver.com/yangon_daddy/224488966590",
+      "publishedAt": "2026-11-23T21:36:34+09:00",
+      "category": "내맘대로 야구"
+    },
+    {
+      "blog": "music",
+      "logNo": "224488899259",
+      "title": "스트레이 키즈 일본 미니 4집 SUIATSU, 처음으로 멤버 8명 솔로반이 나온다",
+      "url": "https://blog.naver.com/jpopsakurazaka/224488899259",
+      "publishedAt": "2026-11-23T20:35:49+09:00",
+      "category": "앨범정보"
+    },
     {
       "blog": "sports",
       "logNo": "224488263093",
