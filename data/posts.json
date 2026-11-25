@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-25T05:45:28+09:00",
+  "updatedAt": "2026-11-25T13:57:45+09:00",
   "posts": [
+    {
+      "blog": "sports",
+      "logNo": "224491348046",
+      "title": "이정후 트레이드설, 개인 최고 타율에도 SI가 내보내라고 한 이유",
+      "url": "https://blog.naver.com/yangon_daddy/224491348046",
+      "publishedAt": "2026-11-25T13:02:08+09:00",
+      "category": "내맘대로 야구"
+    },
+    {
+      "blog": "sports",
+      "logNo": "224490931225",
+      "title": "구자욱 FA 두산 참전, 평균자책점 1위 팀 감독이 \"최대 문제는 타격\"이라고 말한 이유",
+      "url": "https://blog.naver.com/yangon_daddy/224490931225",
+      "publishedAt": "2026-11-25T07:50:43+09:00",
+      "category": "내맘대로 야구"
+    },
     {
       "blog": "music",
       "logNo": "224490499154",
