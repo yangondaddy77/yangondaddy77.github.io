@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-11-26T05:02:41+09:00",
+  "updatedAt": "2026-11-26T13:14:43+09:00",
   "posts": [
+    {
+      "blog": "sports",
+      "logNo": "224492939289",
+      "title": "구자욱·원태인 삼성 카퍼레이드 불참, 20년 만의 우승 퍼레이드에 FA 두 주역이 빠진다",
+      "url": "https://blog.naver.com/yangon_daddy/224492939289",
+      "publishedAt": "2026-11-26T12:55:42+09:00",
+      "category": "내맘대로 야구"
+    },
+    {
+      "blog": "music",
+      "logNo": "224492527303",
+      "title": "아이유 월드투어 2027 일정, 한국 여성 솔로 첫 도쿄돔과 10개 도시 19회",
+      "url": "https://blog.naver.com/jpopsakurazaka/224492527303",
+      "publishedAt": "2026-11-26T07:59:40+09:00",
+      "category": "요즘뭐해"
+    },
+    {
+      "blog": "music",
+      "logNo": "224492114886",
+      "title": "아이묭 6집 スマイル週間 발매일·수록곡 13곡, 초회한정반 弾き語り CD와 예약 특전",
+      "url": "https://blog.naver.com/jpopsakurazaka/224492114886",
+      "publishedAt": "2026-11-26T07:10:00+09:00",
+      "category": "앨범정보"
+    },
+    {
+      "blog": "sports",
+      "logNo": "224492063145",
+      "title": "원태인 NC와 조만간 만난다, 구자욱은 ESPN이 메츠 가성비 1루 후보로 거론",
+      "url": "https://blog.naver.com/yangon_daddy/224492063145",
+      "publishedAt": "2026-11-26T07:00:00+09:00",
+      "category": "내맘대로 야구"
+    },
     {
       "blog": "music",
       "logNo": "224492072623",
