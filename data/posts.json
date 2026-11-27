@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-27T04:45:07+09:00",
+  "updatedAt": "2026-11-27T13:23:38+09:00",
   "posts": [
+    {
+      "blog": "sports",
+      "logNo": "224493729706",
+      "title": "제너레이션 매치 명단 34명, 류현진 팀 베테랑과 이정후 팀 라이징의 22년 차이",
+      "url": "https://blog.naver.com/yangon_daddy/224493729706",
+      "publishedAt": "2026-11-27T11:00:00+09:00",
+      "category": "내맘대로 야구"
+    },
+    {
+      "blog": "music",
+      "logNo": "224494070014",
+      "title": "빌보드 재팬 핫100 JO1 IGNITE 1위, 33위에서 한 주 만에 CD 67만 장으로 정상",
+      "url": "https://blog.naver.com/jpopsakurazaka/224494070014",
+      "publishedAt": "2026-11-27T07:55:00+09:00",
+      "category": "빌보드 HOT100"
+    },
+    {
+      "blog": "sports",
+      "logNo": "224493752638",
+      "title": "모레노 감독 연임 결론은 12월 말 이사회로, 5시간 회의에도 답은 없었다",
+      "url": "https://blog.naver.com/yangon_daddy/224493752638",
+      "publishedAt": "2026-11-27T07:00:00+09:00",
+      "category": "내맘대로 축구"
+    },
     {
       "blog": "sports",
       "logNo": "224492955947",
